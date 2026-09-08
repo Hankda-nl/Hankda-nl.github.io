@@ -4,4 +4,6 @@
 
 主页：https://hankda-nl.github.io/
 
+English version (Hank): https://hankda-nl.github.io/en/
+
 页面使用原生 HTML、CSS 和 JavaScript，照片由本人提供。

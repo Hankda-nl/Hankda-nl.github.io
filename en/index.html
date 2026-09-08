@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hank&#x27;s portfolio: materials research, machine learning and AI applications in finance. Explore interactive examples of my project approach.">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta property="og:title" content="Hank | From Materials Research to AI Applications">
+  <meta property="og:description" content="From experiments to information processing, exploring how technology can solve practical problems.">
+  <title>Hank | From Materials Research to AI Applications</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../technology.css">
+  <link rel="stylesheet" href="../showcase.css">
+  <script src="app.js" defer></script>
+  <script src="../effects.js" defer></script>
+  <script type="module" src="showcase.mjs"></script>
+  <link rel="stylesheet" href="../language.css">
+  <script src="../language.js" defer></script>
+</head>
+<body>
+  <canvas class="ambient-scene" id="ambient-scene" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#top" aria-label="Hank, back to home">H<span class="wordmark-dot">.</span><span class="wordmark-name">Hank</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#experience">Internship</a>
+        <a href="#demo">Demo</a>
+        <a href="#research">Research</a>
+        <a href="#life">Life</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="language-switch" href="../" lang="zh-CN" hreflang="zh-CN" aria-label="Switch to Chinese">中文</a>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button>
+    </div>
+  </header>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+
+  <main id="main">
+    <section class="hero shell immersive-hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="short-line"></span> Hank <span class="muted">/ MATERIALS × AI</span></div>
+        <h1 id="hero-title">From thin films,<br>to <span>AI applications.</span></h1>
+        <p class="hero-intro">I&#x27;m Hank. My experience spans materials and optoelectronics research, machine learning, and AI applications in finance.<br class="desktop-break">I like to break problems down clearly, then turn ideas into results I can test.</p>
+        <div class="hero-domains" aria-label="Research and practice"><span>Materials science</span><span>Machine learning</span><span>AI applications</span></div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#project-cinema">Watch project demos <span aria-hidden="true">↗</span></a>
+          <a class="button button-plain" href="#about">About me <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="education-line"><span>Imperial College London</span><span>MSc · Materials Science</span><span>Optoelectronics · Physics · Machine Learning</span></div>
+      </div>
+      <section class="project-theatre" id="project-cinema" aria-labelledby="cinema-title">
+        <div class="cinema-topline"><span>PROJECTS IN MOTION</span><div><span id="cinema-counter">01 / 04</span><button id="cinema-toggle" type="button" aria-label="Pause project animation">Ⅱ</button></div></div>
+        <div class="cinema-canvas-wrap"><canvas id="project-canvas" role="img" aria-label="Transparent electrode concept model: glass substrate, film layers and light transmission.">Concept animations for four projects: transparent electrodes, materials machine learning, trade instruction parsing and contactless heart rate detection.</canvas></div>
+        <div class="cinema-caption"><span id="cinema-category">Materials / Transparent Electrodes</span><h2 id="cinema-title">A thin film connecting light and electricity.</h2><p id="cinema-description">Explore the glass substrate and transparent film layers to understand the goals of light transmission and conductivity.</p></div>
+        <div class="cinema-chapters" role="group" aria-label="Select a project chapter"><button type="button" data-chapter="0" aria-pressed="true"><span>01</span> Thin films<i></i></button><button type="button" data-chapter="1" aria-pressed="false"><span>02</span> Materials<i></i></button><button type="button" data-chapter="2" aria-pressed="false"><span>03</span> Parsing<i></i></button><button type="button" data-chapter="3" aria-pressed="false"><span>04</span> Pulse<i></i></button></div>
+        <p class="cinema-note" id="cinema-note">Concept animation · Film thickness is exaggerated. No real samples or measured data are shown.</p>
+      </section>
+    </section>
+
+    <div class="discipline-strip"><div class="shell strip-inner"><span>Research guides methods</span><i aria-hidden="true">/</i><span>Data tests assumptions</span><i aria-hidden="true">/</i><span>Engineering puts ideas to work</span></div></div>
+
+    <section class="shell about-section" id="about" aria-labelledby="about-title">
+      <div class="about-intro">      <div class="portrait-stage" id="portrait-stage">
+        <div class="portrait-outline" aria-hidden="true"></div>
+        <figure class="portrait-card" id="portrait-card">
+          <img src="../assets/hank-portrait.jpg" alt="Portrait of Hank" width="1088" height="959" fetchpriority="high">
+          <figcaption><span>BEHIND THE WORK</span><strong>Hank</strong></figcaption>
+        </figure>
+        <div class="portrait-label"><span class="portrait-label-line" aria-hidden="true"></span><div><span>Materials × AI</span><strong>From experiments to applications.</strong></div></div>
+      </div><p class="eyebrow">ABOUT ME</p><h2 id="about-title">Different fields,<br>a shared way to solve problems.</h2><p>In materials research, I use fabrication and characterisation to understand changes in performance. In machine learning, I compare models and assess generalisation. In finance, I work to make complex business information clearer.</p><p>These experiences have shaped how I work: understand the need, choose a method, then test my judgement against the results.</p></div>
+      <div class="education-timeline" aria-label="Education">
+        <article><span class="education-marker" aria-hidden="true"></span><span class="education-type">Master&#x27;s · Materials Science</span><h3>Imperial College London</h3><p>Nanomaterials, electronic structure and optoelectronic properties, and materials machine learning, with research in thin-film fabrication and characterisation.</p></article>
+        <article><span class="education-marker" aria-hidden="true"></span><span class="education-type">Bachelor&#x27;s · Optoelectronic Information Science and Engineering</span><h3>Changchun University of Science and Technology</h3><p>Built a foundation in optics, optoelectronic devices and engineering practice, with a minor in financial engineering.</p></article>
+        <article><span class="education-marker" aria-hidden="true"></span><span class="education-type">Bachelor&#x27;s · Physics</span><h3>University of the West of Scotland</h3><p>Combined physics studies, thin-film fabrication and photoconductivity research to deepen my understanding of materials and devices.</p></article>
+      </div>
+    </section>
+
+    <section class="campus-section" id="campuses" aria-labelledby="campus-title">
+      <div class="shell"><div class="section-heading"><div><p class="eyebrow">MY JOURNEY <span class="muted">/ Learning and Life</span></p><h2 id="campus-title">Three chapters, each shaping who I am.</h2></div><span class="section-note">Changchun → Scotland → London</span></div>
+      <div class="campus-grid personal-journey">
+        <article class="campus-card"><div class="campus-image-wrap"><img class="campus-image changchun-photo" src="../assets/hank-changchun.jpg" alt="Hank holding a microphone at a lectern at Changchun University of Science and Technology" loading="lazy" width="1280" height="1707"><span class="campus-photo-label">Changchun / Campus Life</span></div><div class="campus-copy"><span class="campus-date">Sep 2020 — Jul 2023</span><h3>Changchun University of Science and Technology</h3><p class="campus-degree">Optoelectronic Information Science and Engineering · Bachelor&#x27;s</p><p>Built an understanding of technical systems through optics, optoelectronic devices and engineering practice, while learning to communicate my ideas clearly.</p></div></article>
+        <article class="campus-card"><div class="campus-image-wrap"><img class="campus-image scotland-photo" src="../assets/hank-scotland.jpg" alt="Hank during his time in Scotland" loading="lazy" width="1280" height="1707"><span class="campus-photo-label">Scotland / Studying Abroad</span></div><div class="campus-copy"><span class="campus-date">Sep 2023 — Jul 2024</span><h3>University of the West of Scotland</h3><p class="campus-degree">Physics · Bachelor&#x27;s with Honours</p><p>Beyond physics classes and thin-film experiments, I explored new surroundings and a different pace of life.</p></div></article>
+        <article class="campus-card"><div class="campus-image-wrap"><img class="campus-image london-photo" src="../assets/hank-london.jpg" alt="Hank on a street in London" loading="lazy" width="1280" height="1707"><span class="campus-photo-label">London / Postgraduate Life</span></div><div class="campus-copy"><span class="campus-date">Sep 2024 — Jul 2026</span><h3>Imperial College London</h3><p class="campus-degree">Advanced Materials Science and Engineering · Master&#x27;s</p><p>Explored transparent conductive films and materials machine learning, testing ideas with experiments and data while broadening my interests.</p></div></article>
+      </div><p class="journey-photo-note">Personal photos from my studies and daily life. The London and Scotland images record my time in each place.</p></div>
+    </section>
+
+    <section class="shell section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">01 <span class="muted">/ Internship Project</span></p><h2 id="experience-title">Turning business messages into structured information.</h2></div><span class="section-note">COFCO Trust · IT Internship</span></div>
+      <div class="case-layout">
+        <div class="case-summary">
+          <span class="pill">AI Applications / Information Extraction</span>
+          <h3>Trade Instruction Parsing</h3>
+          <p>Trade details can appear in text, screenshots and tables. Inconsistent wording and multiple instructions in a single message make the information harder to organise and verify.</p>
+          <p>I contributed to image and text processing and instruction parsing, combining Python rules, large language models and output checks to explore consistent, traceable outputs from complex inputs.</p>
+          <a class="text-link" href="#demo">Explore the approach with an example <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contribution-list">
+          <article><span class="step-number">01</span><div><h4>Start with clear inputs</h4><p>Address OCR errors, misaligned tables and mixed instructions through text cleanup, instruction splitting and field normalisation.</p><span class="small-label">Image and Text Processing · Data Cleanup</span></div></article>
+          <article><span class="step-number">02</span><div><h4>Give rules and models distinct roles</h4><p>Use Python for deterministic parsing and language models for complex meaning. Preserve existing results when merging outputs to reduce overwriting.</p><span class="small-label">Rule-Based Parsing · Language Models</span></div></article>
+          <article><span class="step-number">03</span><div><h4>Build checks into the process</h4><p>Check field formats, output structure and information sources, then analyse errors to make results easier to verify and trace.</p><span class="small-label">Structure Validation · Error Analysis</span></div></article>
+        </div>
+      </div>
+      <details class="project-detail"><summary><span>Learn more: why use layered processing?</span><span class="detail-symbol" aria-hidden="true">+</span></summary><div class="detail-content"><p>Deterministic rules are easy to review and suit clearly formatted content; language models handle more varied wording. Layered processing requires attention to coverage, model call costs and the risk of overwriting existing results.</p><p>My focus is to define each layer&#x27;s role, then check the merged structure and sources. Internal company data, code and system details are not shown here.</p></div></details>
+      <div class="decisions-grid">
+        <details class="decision-card"><summary><span>When recognition fails</span><strong>Fix the input, then review the model output.</strong><span class="decision-open">Explore the approach <span aria-hidden="true">+</span></span></summary><p>OCR can confuse or omit characters and misalign tables, directly affecting field extraction. I first identify whether an issue comes from recognition, data cleanup or language understanding, then adjust that step.</p></details>
+        <details class="decision-card"><summary><span>When a message has multiple instructions</span><strong>Define boundaries to keep details together.</strong><span class="decision-open">Explore the approach <span aria-hidden="true">+</span></span></summary><p>Different items in one message may have different amounts, directions and dates. Establishing instruction boundaries, then checking how fields match each item, helps locate splitting and merging errors.</p></details>
+        <details class="decision-card"><summary><span>When outputs conflict</span><strong>Check sources and preserve existing results.</strong><span class="decision-open">Explore the approach <span aria-hidden="true">+</span></span></summary><p>Rules and models may produce different outputs. Source tracking, structure checks and merge constraints help verify where information came from and whether additions or overwrites are allowed before analysing specific errors.</p></details>
+      </div>
+    </section>
+
+    <section class="demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="eyebrow">02 <span class="muted">/ Interactive Demo</span></p><h2 id="demo-title">How does a message become structured fields?</h2></div><span class="demo-badge">Interactive example</span></div>
+        <p class="section-intro">Choose a scenario, then select a field on the right to see its supporting text in the original message.</p>
+        <div class="scenario-switch" role="group" aria-label="Select a demo scenario">
+          <button class="scenario-button active" type="button" data-scenario="complete" aria-pressed="true"><span>01</span> Complete details</button>
+          <button class="scenario-button" type="button" data-scenario="missing" aria-pressed="false"><span>02</span> Missing amount</button>
+          <button class="scenario-button" type="button" data-scenario="multiple" aria-pressed="false"><span>03</span> Multiple instructions</button>
+        </div>
+        <div class="walkthrough-bar">
+          <div class="walkthrough-controls"><button id="play-walkthrough" class="walkthrough-play" type="button"><span aria-hidden="true">▶</span> Play walkthrough</button><button id="reset-walkthrough" class="walkthrough-reset" type="button">Reset</button></div>
+          <div class="walkthrough-steps" role="group" aria-label="View processing steps"><button type="button" data-stage="0"><span>1</span> Clean input</button><i aria-hidden="true"></i><button type="button" data-stage="1"><span>2</span> Split instructions</button><i aria-hidden="true"></i><button type="button" data-stage="2"><span>3</span> Extract fields</button><i aria-hidden="true"></i><button type="button" data-stage="3"><span>4</span> Check results</button></div>
+        </div>
+        <p id="walkthrough-description" class="walkthrough-description" aria-live="polite">Press play to walk through this fictional example, or select a step directly.</p>
+        <div class="demo-workspace">
+          <div class="input-panel">
+            <div class="panel-heading"><span>Original message</span><span class="panel-meta">INPUT</span></div>
+            <div id="source-message" class="source-message"></div>
+            <div class="scenario-insight"><span class="insight-marker" aria-hidden="true">i</span><p id="scenario-insight"></p></div>
+            <div class="source-legend"><span></span> Select a field to highlight its source text</div>
+          </div>
+          <div class="output-panel">
+            <div class="panel-heading"><span>Structured output</span><span id="output-status" class="output-status"></span></div>
+            <div id="instruction-switch" class="instruction-switch" role="group" aria-label="Select a parsed instruction" hidden></div>
+            <div id="field-results" class="field-results"></div>
+            <p id="field-explanation" class="field-explanation" aria-live="polite"></p>
+          </div>
+        </div>
+        <p class="demo-disclosure">Fictional example illustrating the approach. Uses preset outputs and browser interactions, not a company system or live model inference.</p>
+        <noscript><p>Enable JavaScript in your browser to use the interactive demo. You can still read the internship and research sections.</p></noscript>
+      </div>
+    </section>
+
+    <section class="shell section" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><div><p class="eyebrow">03 <span class="muted">/ Research Experience</span></p><h2 id="research-title">Research shaped how I test ideas.</h2></div><span class="section-note">Materials Science × Machine Learning</span></div>
+      <div class="research-grid">
+        <article class="research-card"><div class="research-card-top"><span class="pill">Machine learning</span><span class="research-code">ML / 01</span></div><h3>Materials Classification and Model Comparison</h3><p class="research-lead">Comparing models using material features.</p><dl><div><dt>What I did</dt><dd>Processed features for the Matbench Glass classification task and compared random forests, support vector machines and neural networks.</dd></div><div><dt>How I validated it</dt><dd>Used cross-validation and hyperparameter optimisation, with regularisation, dropout and early stopping to control overfitting.</dd></div><div><dt>What I learned</dt><dd>Compare approaches with consistent evaluation, paying attention to data splits and generalisation.</dd></div></dl><details class="research-detail"><summary>View method details <span aria-hidden="true">+</span></summary><p>Used material features for classification, comparing traditional machine learning with deep neural networks. Tuned hyperparameters with Bayesian optimisation and used L2 regularisation, batch normalisation, dropout and early stopping, examining the gap between training and validation performance.</p></details><div class="tag-row"><span>Python</span><span>PyTorch</span><span>Model Evaluation</span></div></article>
+        <article class="research-card"><div class="research-card-top"><span class="pill">Experimental Research</span><span class="research-code">LAB / 02</span></div><h3>ITO Transparent Conductive Films</h3><p class="research-lead">Connecting fabrication conditions, structure and optoelectronic properties.</p><dl><div><dt>What I did</dt><dd>Studied ITO and Zn-doped ITO films to explore how deposition conditions affect film properties.</dd></div><div><dt>How I validated it</dt><dd>Combined XRD, AFM, SEM / EDX and optical transmission tests to examine structure, morphology, composition and performance.</dd></div><div><dt>What I learned</dt><dd>Investigate unexpected results and use evidence from multiple measurements to test experimental interpretations.</dd></div></dl><details class="research-detail"><summary>View experiment details <span aria-hidden="true">+</span></summary><p>Prepared films by pulsed laser deposition, examining deposition temperature, oxygen conditions and Zn doping. Combined optical transmission, electrical measurements and structural characterisation, and analysed cracking, adhesion and uniformity issues.</p></details><div class="tag-row"><span>PLD</span><span>Materials Characterisation</span><span>Experimental Analysis</span></div></article>
+        <article class="research-card"><div class="research-card-top"><span class="pill">Vision and Signals</span><span class="research-code">VISION / 03</span></div><h3>Contactless Heart Rate Detection</h3><p class="research-lead">Extracting subtle physiological signals from facial video.</p><dl><div><dt>What I did</dt><dd>Used imaging photoplethysmography (IPPG) to estimate heart rate from changes in skin colour in video.</dd></div><div><dt>How I built it</dt><dd>Used OpenCV to locate regions of interest and detect skin colour, extracting colour-channel signals over time.</dd></div><div><dt>What I learned</dt><dd>Connect image processing and signal analysis to a practical measurement problem.</dd></div></dl><details class="research-detail"><summary>View the approach <span aria-hidden="true">+</span></summary><p>Converted skin regions in consecutive video frames into time series, then analysed pulse-related periodic changes. Compared colour channels and examined how signal quality and recording conditions affect results.</p></details><div class="tag-row"><span>OpenCV</span><span>IPPG</span><span>Signal Processing</span></div></article>
+        <article class="research-card"><div class="research-card-top"><span class="pill">Optoelectronic Devices</span><span class="research-code">DEVICE / 04</span></div><h3>Thin Films and Infrared Photoconductivity</h3><p class="research-lead">From material fabrication to reading weak photoelectric signals.</p><dl><div><dt>What I did</dt><dd>Worked on and led PbSe / PbTe thin-film and photoconductivity projects, linking fabrication, material treatment and device testing.</dd></div><div><dt>How I built it</dt><dd>Used chemical bath deposition, sensitisation treatments and weak photocurrent readout circuits to test infrared response.</dd></div><div><dt>What I learned</dt><dd>Understand how materials, processing and testing together affect device performance.</dd></div></dl><details class="research-detail"><summary>View engineering details <span aria-hidden="true">+</span></summary><p>Examined deposition conditions and film thickness consistency. Explored device response through surface treatment, oxygen sensitisation and iodine sensitisation, using readout circuits to observe electrical signals under changing illumination.</p></details><div class="tag-row"><span>Thin-Film Deposition</span><span>Infrared Detection</span><span>Signal Readout</span></div></article>
+      </div>
+    </section>
+
+    <section class="approach-section shell" aria-labelledby="approach-title">
+      <div class="approach-title"><p class="eyebrow">04 <span class="muted">/ How I Work</span></p><h2 id="approach-title">Understand first,<br>then put it to the test.</h2><p>From the lab to business applications,<br>I aim to make every step grounded in evidence I can check.</p></div>
+      <div class="approach-steps"><article><span>01</span><div><h3>Define the problem</h3><p>Clarify the inputs, goals, intended data use and evaluation criteria.</p></div></article><article><span>02</span><div><h3>Break down and build</h3><p>Divide the problem into manageable steps and choose suitable rules, models or experimental methods.</p></div></article><article><span>03</span><div><h3>Validate and improve</h3><p>Review results, analyse anomalies and errors, then decide what to adjust next.</p></div></article></div>
+    </section>
+    <section class="life-section shell" id="life" aria-labelledby="life-title">
+      <div class="life-photo-stage"><figure class="life-photo"><img src="../assets/hank-fitness.jpg" alt="Hank training at the gym" loading="lazy" width="1222" height="1238"><figcaption><span>BEYOND THE WORK</span><strong>Do what you love. Keep at it.</strong></figcaption></figure><span class="life-photo-index">LIFE / 01</span></div>
+      <div class="life-copy"><p class="eyebrow"><span class="short-line"></span> OFF THE CLOCK <span class="muted">/ Beyond Work</span></p><h2 id="life-title">Beyond research,<br>I make time for what I enjoy.</h2><p class="life-intro">I enjoy fitness and tennis. I try to be sincere and kind, and to take responsibility for the commitments I make.</p>
+        <div class="life-traits"><article><span class="life-trait-key">01 / Sport</span><div><h3>Fitness and Tennis</h3><p>I enjoy working out and the back-and-forth of a tennis rally.</p></div></article><article><span class="life-trait-key">02 / With Others</span><div><h3>Sincere and Kind</h3><p>I value listening, open communication and consideration for others.</p></div></article><article><span class="life-trait-key">03 / In Practice</span><div><h3>Thoughtful and Responsible</h3><p>I take my commitments seriously and care about doing the work well.</p></div></article></div>
+        <a class="text-link" href="contact.html">Get in touch <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Hank</strong><p>Materials Research · Machine Learning · AI Applications</p></div><div class="footer-links"><a href="contact.html">Stay in touch <span aria-hidden="true">↗</span></a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></div><div class="shell footer-bottom"><span>2026 · Personal Portfolio</span><span>Based on my own experience. Created with AI assistance.</span></div></footer>
+</body>
+</html>
