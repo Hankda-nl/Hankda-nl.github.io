@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="付兴达的个人作品主页：材料研究、机器学习与金融场景 AI 应用。通过互动样例了解我的项目思路。">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta property="og:title" content="付兴达｜从材料研究到 AI 应用">
+  <meta property="og:description" content="从实验验证到信息处理，探索技术如何解决具体问题。">
+  <title>付兴达｜从材料研究到 AI 应用</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="technology.css">
+  <link rel="stylesheet" href="showcase.css">
+  <script src="app.js" defer></script>
+  <script src="effects.js" defer></script>
+  <script type="module" src="showcase.mjs"></script>
+</head>
+<body>
+  <canvas class="ambient-scene" id="ambient-scene" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#top" aria-label="付兴达，返回首页">H<span class="wordmark-dot">.</span><span class="wordmark-name">付兴达</span></a>
+      <nav aria-label="主导航">
+        <a href="#experience">实习<span class="nav-extra">项目</span></a>
+        <a href="#demo">演示<span class="nav-extra">体验</span></a>
+        <a href="#research">研究<span class="nav-extra">经历</span></a>
+        <a href="#life">生活</a>
+        <a href="contact.html">联系我</a>
+      </nav>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">暂停动效</span></button>
+    </div>
+  </header>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+
+  <main id="main">
+    <section class="hero shell immersive-hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="short-line"></span> 付兴达 <span class="muted">/ HANK FU</span></div>
+        <h1 id="hero-title">从一层薄膜，<br>到一个 <span>AI 应用。</span></h1>
+        <p class="hero-intro">我是付兴达。我的经历连接材料与光电研究、机器学习，以及金融场景中的 AI 应用。<br class="desktop-break">我喜欢把问题拆解清楚，再把想法做成可以验证的结果。</p>
+        <div class="hero-domains" aria-label="研究与实践方向"><span>材料科学</span><span>机器学习</span><span>AI 应用</span></div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#project-cinema">观看项目演示 <span aria-hidden="true">↗</span></a>
+          <a class="button button-plain" href="#about">认识我 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="education-line"><span>帝国理工学院</span><span>材料学硕士背景</span><span>光电 · 物理 · 机器学习</span></div>
+      </div>
+      <section class="project-theatre" id="project-cinema" aria-labelledby="cinema-title">
+        <div class="cinema-topline"><span>PROJECTS IN MOTION</span><div><span id="cinema-counter">01 / 04</span><button id="cinema-toggle" type="button" aria-label="暂停项目动画">Ⅱ</button></div></div>
+        <div class="cinema-canvas-wrap"><canvas id="project-canvas" role="img" aria-label="透明电极概念模型：玻璃基底、薄膜分层及透光示意。">四个项目的原理动画：透明电极、材料机器学习、交易解析和非接触心率。</canvas></div>
+        <div class="cinema-caption"><span id="cinema-category">材料 / 透明电极</span><h2 id="cinema-title">一层薄膜，连接光与电。</h2><p id="cinema-description">分层观察玻璃基底与透明薄膜，理解透光与导电的研究目标。</p></div>
+        <div class="cinema-chapters" role="group" aria-label="选择项目章节"><button type="button" data-chapter="0" aria-pressed="true"><span>01</span> 透明薄膜<i></i></button><button type="button" data-chapter="1" aria-pressed="false"><span>02</span> 材料建模<i></i></button><button type="button" data-chapter="2" aria-pressed="false"><span>03</span> 指令解析<i></i></button><button type="button" data-chapter="3" aria-pressed="false"><span>04</span> 脉搏信号<i></i></button></div>
+        <p class="cinema-note" id="cinema-note">概念动画 · 薄膜厚度放大示意，非真实样品或实测数据。</p>
+      </section>
+    </section>
+
+    <div class="discipline-strip"><div class="shell strip-inner"><span>研究提供方法</span><i aria-hidden="true">/</i><span>数据检验判断</span><i aria-hidden="true">/</i><span>工程连接应用</span></div></div>
+
+    <section class="shell about-section" id="about" aria-labelledby="about-title">
+      <div class="about-intro">      <div class="portrait-stage" id="portrait-stage">
+        <div class="portrait-outline" aria-hidden="true"></div>
+        <figure class="portrait-card" id="portrait-card">
+          <img src="assets/hank-portrait.jpg" alt="付兴达的个人照片" width="1088" height="959" fetchpriority="high">
+          <figcaption><span>BEHIND THE WORK</span><strong>付兴达 <small>HANK FU</small></strong></figcaption>
+        </figure>
+        <div class="portrait-label"><span class="portrait-label-line" aria-hidden="true"></span><div><span>材料 × AI</span><strong>从实验，到应用。</strong></div></div>
+      </div><p class="eyebrow">ABOUT ME <span class="muted">/ 关于我</span></p><h2 id="about-title">不同的领域，<br>相通的解决问题方式。</h2><p>在材料实验中，我通过制备和表征理解性能变化；在机器学习中，我比较模型并检查泛化表现；在金融场景中，我尝试让复杂的业务信息变得更清晰。</p><p>这些经历让我逐渐形成一种工作习惯：先理解需求，再选择方法，最后用结果验证判断。</p></div>
+      <div class="education-timeline" aria-label="教育背景">
+        <article><span class="education-marker" aria-hidden="true"></span><span class="education-type">硕士 · 材料学</span><h3>帝国理工学院</h3><p class="school-english">Imperial College London</p><p>纳米材料、电子结构与光电性质、材料机器学习；结合薄膜制备与表征开展研究。</p></article>
+        <article><span class="education-marker" aria-hidden="true"></span><span class="education-type">本科 · 光电信息科学与工程</span><h3>长春理工大学</h3><p>建立光学、光电器件与工程实践基础，并辅修金融工程。</p></article>
+        <article><span class="education-marker" aria-hidden="true"></span><span class="education-type">本科 · 物理学</span><h3>西苏格兰大学</h3><p class="school-english">University of the West of Scotland</p><p>结合物理学习、薄膜制备和光电导研究，加深对材料与器件的理解。</p></article>
+      </div>
+    </section>
+
+    <section class="campus-section" id="campuses" aria-labelledby="campus-title">
+      <div class="shell"><div class="section-heading"><div><p class="eyebrow">MY JOURNEY <span class="muted">/ 我的学习与生活</span></p><h2 id="campus-title">三段经历，也留下了不同的自己。</h2></div><span class="section-note">长春 → 苏格兰 → 伦敦</span></div>
+      <div class="campus-grid personal-journey">
+        <article class="campus-card"><div class="campus-image-wrap"><img class="campus-image changchun-photo" src="assets/hank-changchun.jpg" alt="付兴达在长春理工大学讲台前手持话筒" loading="lazy" width="1280" height="1707"><span class="campus-photo-label">长春 / 校园里的我</span></div><div class="campus-copy"><span class="campus-date">2020.9 — 2023.7</span><h3>长春理工大学</h3><p class="campus-degree">光电信息科学与工程 · 学士</p><p>从光学、光电器件和工程实践出发，建立对技术系统的理解，也学习把自己的想法讲清楚。</p></div></article>
+        <article class="campus-card"><div class="campus-image-wrap"><img class="campus-image scotland-photo" src="assets/hank-scotland.jpg" alt="付兴达在苏格兰的生活照片" loading="lazy" width="1280" height="1707"><span class="campus-photo-label">苏格兰 / 留学生活</span></div><div class="campus-copy"><span class="campus-date">2023.9 — 2024.7</span><h3>西苏格兰大学</h3><p class="campus-degree">物理 · 荣誉学士</p><p>在物理学习和薄膜实验之外，也走出课堂，感受不同的环境与生活节奏。</p></div></article>
+        <article class="campus-card"><div class="campus-image-wrap"><img class="campus-image london-photo" src="assets/hank-london.jpg" alt="付兴达在伦敦街头的生活照片" loading="lazy" width="1280" height="1707"><span class="campus-photo-label">伦敦 / 研究生生活</span></div><div class="campus-copy"><span class="campus-date">2024.9 — 2026.7</span><h3>帝国理工学院</h3><p class="campus-degree">高级材料科学与工程 · 硕士</p><p>深入透明导电薄膜与材料机器学习，用实验和数据验证判断，继续拓展自己的方向。</p></div></article>
+      </div><p class="journey-photo-note">本人学习与生活照片。伦敦与苏格兰配图为当地生活记录。</p></div>
+    </section>
+
+    <section class="shell section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">01 <span class="muted">/ 实习项目</span></p><h2 id="experience-title">把业务消息，整理成结构化信息。</h2></div><span class="section-note">中粮信托 · 信息技术实习</span></div>
+      <div class="case-layout">
+        <div class="case-summary">
+          <span class="pill">AI 应用 / 信息提取</span>
+          <h3>交易指令解析</h3>
+          <p>交易信息可能藏在自然语言、截图和表格中。表达不统一，一条消息也可能包含多个指令，增加了信息整理和核对的难度。</p>
+          <p>我参与图文数据处理与指令解析工作，将 Python 规则、大模型和输出检查结合起来，探索如何把复杂输入转成格式统一、可追溯的信息。</p>
+          <a class="text-link" href="#demo">通过样例理解处理思路 <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contribution-list">
+          <article><span class="step-number">01</span><div><h4>先把输入整理清楚</h4><p>处理图片文字提取后的错漏、表格错位与多指令混杂，进行文本整理、指令拆分和字段归一化。</p><span class="small-label">图文处理 · 数据整理</span></div></article>
+          <article><span class="step-number">02</span><div><h4>让规则与模型各司其职</h4><p>用 Python 处理确定性信息，让大模型补充复杂语义；合并输出时保护已有结果，减少相互覆盖。</p><span class="small-label">规则解析 · 大模型协作</span></div></article>
+          <article><span class="step-number">03</span><div><h4>把检查放进处理流程</h4><p>检查字段格式、输出结构与信息来源，结合错误样例分析问题，使结果更便于核对和追踪。</p><span class="small-label">结构校验 · 错误分析</span></div></article>
+        </div>
+      </div>
+      <details class="project-detail"><summary><span>进一步了解：为什么采用分层处理？</span><span class="detail-symbol" aria-hidden="true">+</span></summary><div class="detail-content"><p>确定性规则容易复核，适合格式清晰的内容；大模型可以理解更灵活的表达。分层处理需要同时考虑信息覆盖、调用成本，以及已有结果是否会被覆盖。</p><p>我的关注点是：先明确各层负责什么，再检查合并后的结构与来源。涉及公司内部的数据、代码和系统细节不在此页面展示。</p></div></details>
+      <div class="decisions-grid">
+        <details class="decision-card"><summary><span>遇到识别错误</span><strong>先修复输入，再看模型结果。</strong><span class="decision-open">展开思路 <span aria-hidden="true">+</span></span></summary><p>图片转文字后，字符混淆、缺字或表格错位可能直接影响字段提取。我会先区分问题发生在识别、数据整理还是语义理解环节，再对相应步骤作调整。</p></details>
+        <details class="decision-card"><summary><span>遇到多条指令</span><strong>明确边界，避免信息串到一起。</strong><span class="decision-open">展开思路 <span aria-hidden="true">+</span></span></summary><p>一条消息里的多个对象，可能分别对应不同金额、方向和日期。先整理指令边界，再检查每组字段的对应关系，帮助定位拆分与合并中的错误。</p></details>
+        <details class="decision-card"><summary><span>遇到结果冲突</span><strong>检查来源，保护已有结果。</strong><span class="decision-open">展开思路 <span aria-hidden="true">+</span></span></summary><p>规则层与模型层可能给出不同内容。通过来源追踪、输出结构检查和合并约束，核对信息来自哪里、是否允许补充或覆盖，再分析具体错误。</p></details>
+      </div>
+    </section>
+
+    <section class="demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="eyebrow">02 <span class="muted">/ 互动演示</span></p><h2 id="demo-title">一条消息，如何变成清晰的字段？</h2></div><span class="demo-badge">可交互样例</span></div>
+        <p class="section-intro">选择一个场景，再点击右侧字段，查看原文中的对应依据。</p>
+        <div class="scenario-switch" role="group" aria-label="选择演示场景">
+          <button class="scenario-button active" type="button" data-scenario="complete" aria-pressed="true"><span>01</span> 信息完整</button>
+          <button class="scenario-button" type="button" data-scenario="missing" aria-pressed="false"><span>02</span> 缺少金额</button>
+          <button class="scenario-button" type="button" data-scenario="multiple" aria-pressed="false"><span>03</span> 多条指令</button>
+        </div>
+        <div class="walkthrough-bar">
+          <div class="walkthrough-controls"><button id="play-walkthrough" class="walkthrough-play" type="button"><span aria-hidden="true">▶</span> 播放处理过程</button><button id="reset-walkthrough" class="walkthrough-reset" type="button">重置</button></div>
+          <div class="walkthrough-steps" role="group" aria-label="查看处理步骤"><button type="button" data-stage="0"><span>1</span> 整理输入</button><i aria-hidden="true"></i><button type="button" data-stage="1"><span>2</span> 拆分指令</button><i aria-hidden="true"></i><button type="button" data-stage="2"><span>3</span> 提取字段</button><i aria-hidden="true"></i><button type="button" data-stage="3"><span>4</span> 核对结果</button></div>
+        </div>
+        <p id="walkthrough-description" class="walkthrough-description" aria-live="polite">点击播放，分步查看当前虚构样例的处理思路；也可以直接选择步骤。</p>
+        <div class="demo-workspace">
+          <div class="input-panel">
+            <div class="panel-heading"><span>原始消息</span><span class="panel-meta">INPUT</span></div>
+            <div id="source-message" class="source-message"></div>
+            <div class="scenario-insight"><span class="insight-marker" aria-hidden="true">i</span><p id="scenario-insight"></p></div>
+            <div class="source-legend"><span></span> 点击字段后，高亮对应原文</div>
+          </div>
+          <div class="output-panel">
+            <div class="panel-heading"><span>结构化结果</span><span id="output-status" class="output-status"></span></div>
+            <div id="instruction-switch" class="instruction-switch" role="group" aria-label="选择拆分后的指令" hidden></div>
+            <div id="field-results" class="field-results"></div>
+            <p id="field-explanation" class="field-explanation" aria-live="polite"></p>
+          </div>
+        </div>
+        <p class="demo-disclosure">虚构样例，仅演示处理思路。采用预设结果与前端交互，非公司系统或实时模型推理。</p>
+        <noscript><p>请启用浏览器 JavaScript 体验互动演示。页面中的实习和研究介绍仍可正常阅读。</p></noscript>
+      </div>
+    </section>
+
+    <section class="shell section" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><div><p class="eyebrow">03 <span class="muted">/ 研究经历</span></p><h2 id="research-title">研究训练了我验证问题的方式。</h2></div><span class="section-note">材料科学 × 机器学习</span></div>
+      <div class="research-grid">
+        <article class="research-card"><div class="research-card-top"><span class="pill">机器学习</span><span class="research-code">ML / 01</span></div><h3>材料分类与模型比较</h3><p class="research-lead">从材料特征出发，比较不同模型的表现。</p><dl><div><dt>做了什么</dt><dd>围绕 Matbench Glass 材料分类任务进行特征处理，比较随机森林、支持向量机与神经网络等方法。</dd></div><div><dt>如何验证</dt><dd>使用交叉验证与超参数优化，并结合正则化、Dropout 和早停控制过拟合。</dd></div><div><dt>带来的方法</dt><dd>用一致的评估方式比较方案，关注数据划分和泛化表现。</dd></div></dl><details class="research-detail"><summary>查看方法细节 <span aria-hidden="true">+</span></summary><p>将材料特征用于分类建模，对比传统机器学习与深度神经网络。通过贝叶斯优化调整超参数，并在训练中使用 L2 正则、Batch Normalization、Dropout 与早停。关注训练表现与验证表现之间的差异。</p></details><div class="tag-row"><span>Python</span><span>PyTorch</span><span>模型评估</span></div></article>
+        <article class="research-card"><div class="research-card-top"><span class="pill">实验研究</span><span class="research-code">LAB / 02</span></div><h3>ITO 透明导电薄膜</h3><p class="research-lead">连接制备条件、材料结构与光电性能。</p><dl><div><dt>做了什么</dt><dd>研究 ITO 与 Zn 掺杂 ITO 薄膜，探索沉积条件对薄膜性能的影响。</dd></div><div><dt>如何验证</dt><dd>结合 XRD、AFM、SEM / EDX 和光学透过测试，分析结构、形貌、成分与性能。</dd></div><div><dt>带来的方法</dt><dd>从异常结果追查原因，结合多种测量证据检验实验判断。</dd></div></dl><details class="research-detail"><summary>查看实验细节 <span aria-hidden="true">+</span></summary><p>通过脉冲激光沉积制备薄膜，考察沉积温度、氧气条件及 Zn 掺杂方案。将光学透过、电学测量与结构表征结合起来，并对裂纹、附着和均匀性问题进行分析。</p></details><div class="tag-row"><span>PLD</span><span>材料表征</span><span>实验分析</span></div></article>
+        <article class="research-card"><div class="research-card-top"><span class="pill">视觉与信号</span><span class="research-code">VISION / 03</span></div><h3>非接触式心率检测</h3><p class="research-lead">从面部视频中，提取微弱的生理信号。</p><dl><div><dt>做了什么</dt><dd>围绕成像光电容积描记法（IPPG），利用视频中的皮肤颜色变化估计心率。</dd></div><div><dt>如何实现</dt><dd>使用 OpenCV 定位感兴趣区域并检测肤色，提取颜色通道随时间变化的信号。</dd></div><div><dt>带来的方法</dt><dd>将图像处理、信号分析和实际测量问题连接起来。</dd></div></dl><details class="research-detail"><summary>查看处理思路 <span aria-hidden="true">+</span></summary><p>把连续视频帧中的皮肤区域转换为时间序列，再分析与脉搏相关的周期变化。项目中比较颜色通道，关注信号质量及采集条件对结果的影响。</p></details><div class="tag-row"><span>OpenCV</span><span>IPPG</span><span>信号处理</span></div></article>
+        <article class="research-card"><div class="research-card-top"><span class="pill">光电器件</span><span class="research-code">DEVICE / 04</span></div><h3>薄膜制备与红外光电导</h3><p class="research-lead">从材料制备，到微弱光电信号的读取。</p><dl><div><dt>做了什么</dt><dd>参与并负责 PbSe / PbTe 薄膜与光电导项目，连接制备工艺、材料处理和器件测试。</dd></div><div><dt>如何实现</dt><dd>采用化学浴沉积，结合敏化处理与弱光电流读出电路，开展红外响应验证。</dd></div><div><dt>带来的方法</dt><dd>理解材料、工艺和测试环节如何共同影响器件表现。</dd></div></dl><details class="research-detail"><summary>查看工程细节 <span aria-hidden="true">+</span></summary><p>关注沉积条件和薄膜厚度一致性，结合表面处理、氧敏化和碘敏化探索器件响应，并通过读出电路观察光照变化对应的电信号。</p></details><div class="tag-row"><span>薄膜沉积</span><span>红外探测</span><span>信号读出</span></div></article>
+      </div>
+    </section>
+
+    <section class="approach-section shell" aria-labelledby="approach-title">
+      <div class="approach-title"><p class="eyebrow">04 <span class="muted">/ 我的工作方式</span></p><h2 id="approach-title">先理解清楚，<br>再动手验证。</h2><p>从实验室到业务场景，<br>我希望每一步都有可以检查的依据。</p></div>
+      <div class="approach-steps"><article><span>01</span><div><h3>明确问题</h3><p>先弄清输入、目标、数据用途和判断标准。</p></div></article><article><span>02</span><div><h3>拆解与实现</h3><p>把问题拆成可处理的环节，选择合适的规则、模型或实验方法。</p></div></article><article><span>03</span><div><h3>验证与改进</h3><p>检查具体结果，分析异常与错误，再决定下一步调整。</p></div></article></div>
+    </section>
+    <section class="life-section shell" id="life" aria-labelledby="life-title">
+      <div class="life-photo-stage"><figure class="life-photo"><img src="assets/hank-fitness.jpg" alt="付兴达在健身房的训练生活照片" loading="lazy" width="1222" height="1238"><figcaption><span>BEYOND THE WORK</span><strong>保持热爱，也保持行动。</strong></figcaption></figure><span class="life-photo-index">LIFE / 01</span></div>
+      <div class="life-copy"><p class="eyebrow"><span class="short-line"></span> OFF THE CLOCK <span class="muted">/ 生活中的我</span></p><h2 id="life-title">研究之外，<br>也把时间留给热爱。</h2><p class="life-intro">我喜欢健身，也喜欢网球。生活中，我希望保持真诚和友善；对待答应的事，也会认真负责。</p>
+        <div class="life-traits"><article><span class="life-trait-key">01 / 运动</span><div><h3>健身与网球</h3><p>喜欢健身训练，也享受网球对打的乐趣。</p></div></article><article><span class="life-trait-key">02 / 相处</span><div><h3>真诚、友善</h3><p>愿意倾听与沟通，也在意他人的感受。</p></div></article><article><span class="life-trait-key">03 / 做事</span><div><h3>认真、有责任心</h3><p>把承诺放在心上，把手里的事情做好。</p></div></article></div>
+        <a class="text-link" href="contact.html">与我联系 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>付兴达 <span>/ HANK FU</span></strong><p>材料研究 · 机器学习 · AI 应用</p></div><div class="footer-links"><a href="contact.html">保持联系 <span aria-hidden="true">↗</span></a><a href="#top">回到顶部 <span aria-hidden="true">↑</span></a></div></div><div class="shell footer-bottom"><span>2026 · 个人作品主页</span><span>基于本人经历整理，AI 协作制作。</span></div></footer>
+</body>
+</html>
